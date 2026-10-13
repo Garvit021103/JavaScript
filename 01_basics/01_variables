@@ -14,7 +14,6 @@ account_City = "Bengaluru"
 
 /*
 Prefer not to use Var because of issue in blockScope and functional Scope
-
 */
 
 console.table([account_Id , account_Email , account_Password , account_City , account_State])

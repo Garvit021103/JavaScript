@@ -1,7 +1,7 @@
 // singleton 
 // object literals ( object ko declare karne ka tareeka) 
 // no singleton object is formed from literlars
-// only singleton object is formed from constructors 
+//  singleton object is formed only from constructors method of creating objects
 
 const mySym = Symbol("key1")
 

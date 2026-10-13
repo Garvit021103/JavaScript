@@ -32,7 +32,7 @@ const url ="https://garvit.com/garvit%20mittal"
 console.log(url)
 console.log(url.replace('%20','-'));
 
-console.log(gameName.split('-'))
+console.log(gameName.split('t'))
 
 
 

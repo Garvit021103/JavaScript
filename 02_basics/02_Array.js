@@ -10,7 +10,7 @@ const dc_heros = ["superMan" , "flash" , "batMan"]
 // console.log(allHeros)
 
 const all_new_heros = [...marvel_heros, ...dc_heros] // makes all the elements individual
-// console.log(all_new_heros)
+console.log(all_new_heros)
 
 const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
 
