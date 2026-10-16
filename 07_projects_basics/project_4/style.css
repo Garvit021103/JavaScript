@@ -1,0 +1,172 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    border-bottom: 1px solid #2d2d2d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #ff9f43;
+}
+
+/* Main Wrapper / Card Container */
+#wrapper {
+    background-color: #1e1e1e;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+    margin: auto 1rem;
+    text-align: center;
+    border: 1px solid #2d2d2d;
+}
+
+/* Headings and Paragraphs */
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+}
+
+#wrapper p {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+#wrapper br {
+    display: none; /* Handled gracefully via margins */
+}
+
+/* Form Styles */
+.form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #cfcfcf;
+    text-align: left;
+}
+
+.guessField {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background-color: #2a2a2a;
+    border: 2px solid #3d3d3d;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.guessField:focus {
+    border-color: #ff9f43;
+    box-shadow: 0 0 0 3px rgba(255, 159, 67, 0.15);
+}
+
+.guessSubmit {
+    width: 100%;
+    padding: 0.85rem;
+    background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.guessSubmit:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+}
+
+.guessSubmit:active {
+    transform: translateY(0);
+}
+
+/* Result Paras Section */
+.resultParas {
+    margin-top: 1.5rem;
+    background-color: #252525;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.resultParas p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.resultParas span {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.lowOrHi {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #ff9f43 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #wrapper {
+        padding: 1.5rem 1rem;
+    }
+}
